@@ -1,10 +1,12 @@
+setwd(choose.dir())
+
 # load relevant the data files
 source('codes/1_loadData.r')
 
-# source the age-structured SEIcIscR model functions 
+# source the age-structured SEIcIscR model functions
 source('codes/function_modelSEIcIscR.r')
 
-# source the age-structured SEIcIscR model functions 
+# source the age-structured SEIcIscR model functions
 source('codes/function_postprocessing.r')
 
 # simulate N oubtreaks
