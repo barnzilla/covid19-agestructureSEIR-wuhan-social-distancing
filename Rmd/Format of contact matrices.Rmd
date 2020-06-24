@@ -39,51 +39,5 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dpi = 300)
 ```
 
-# Load packages to extend base R
 
-```{r}
-library(DT)
-```
 
-# Load contact matrices
-
-```{r}
-load(url("https://github.com/barnzilla/covid19-agestructureSEIR-wuhan-social-distancing/blob/master/data/contacts.Rdata?raw=true"))
-```
-
-# Structure of the contact matrices
-
-```{r}
-str(contacts)
-```
-
-# Contact matrices for Canada
-## Home
-
-```{r}
-datatable(contacts$CAN$home)
-```
-
-## Work
-
-```{r}
-datatable(contacts$CAN$work)
-```
-
-## School
-
-```{r}
-datatable(contacts$CAN$school)
-```
-
-## Others
-
-```{r}
-datatable(contacts$CAN$others)
-```
-
-## All
-
-```{r}
-datatable(contacts$CAN$all)
-```
